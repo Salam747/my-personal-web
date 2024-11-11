@@ -1,0 +1,102 @@
+.navbarContainer {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbarHeader {
+  background-color: black;
+  color: #d1d5db;
+}
+
+.navbarContent {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #d1d5db;
+  margin-bottom: 0.5rem;
+}
+
+.navbarLogoImg {
+  border-radius: 4px;
+}
+
+.navbarTitle {
+  margin-left: 0.75rem;
+  font-size: 1.25rem;
+  cursor: default;
+}
+
+.navbarLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+}
+
+.navbarLink {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #d1d5db;
+  font-size: 1rem;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbarLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.navbarDownloadBtn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #d1d5db;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.navbarDownloadBtn:hover {
+  background-color: #e5e7eb;
+}
+
+.downloadIcon {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbarContent {
+    flex-direction: column;
+  }
+
+  .navbarLinks {
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  .navbarLink {
+    margin: 0.5rem;
+  }
+
+  .navbarDownloadBtn {
+    margin-top: 1rem;
+  }
+}

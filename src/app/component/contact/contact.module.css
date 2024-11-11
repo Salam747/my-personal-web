@@ -1,0 +1,146 @@
+/* General Styles */
+.contactSection {
+    font-family: Arial, sans-serif;
+    padding-top: 38px; /* Reduced padding for a smaller layout */
+    margin-top: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 900px; /* Decreased max width to make the layout smaller */
+  }
+  
+  .contactMap {
+    flex: 1;
+    min-width: 250px; /* Smaller minimum width for the map */
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .contactMapIframe {
+    filter: contrast(3.2) opacity(0.8);
+    border-radius: 10px;
+  }
+  
+  .contactInfo {
+    background-color: white;
+    padding: 15px; /* Reduced padding */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px; /* Reduced space from the bottom */
+    left: 10px; /* Reduced space from the left */
+    right: 10px; /* Reduced space from the right */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contactInfoItem h2 {
+    font-weight: bold;
+    font-size: 10px; /* Reduced font size for headings */
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .contactInfoItem p, .contactInfoItem a {
+    color: #555;
+    font-size: 12px; /* Smaller font size for contact info text */
+  }
+  
+  .contactForm {
+    background-color: white;
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1;
+    min-width: 250px; /* Smaller minimum width for the form */
+  }
+  
+  .contactForm h2 {
+    font-size: 1.5rem; /* Reduced font size for the form heading */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contactForm p {
+    font-size: 0.9rem; /* Reduced font size for the paragraph */
+    margin-bottom: 15px; /* Reduced margin bottom */
+    color: #666;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px; /* Reduced space between form fields */
+  }
+  
+  .formGroup label {
+    display: block;
+    font-size: 12px; /* Smaller font size for labels */
+    color: #333;
+  }
+  
+  .formGroup input, .formGroup textarea {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Smaller font size for input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .formGroup input:focus, .formGroup textarea:focus {
+    border-color: #4CAF50;
+  }
+  
+  .formGroup textarea {
+    height: 120px; /* Reduced height for the textarea */
+  }
+  
+  .submitButton {
+    padding: 8px 16px; /* Smaller padding for the button */
+    background-color: #333;
+    color: white;
+    font-size: 14px; /* Smaller font size for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contactContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contactMap, .contactForm {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contactInfo {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .contactInfoItem h2 {
+      font-size: 12px; /* Adjusted for smaller screens */
+    }
+  
+    .contactInfoItem p, .contactInfoItem a {
+      font-size: 12px;
+    }
+  }
+  
